@@ -26,7 +26,19 @@ In this project, I chose a Domain-driven design (DDD) in order to identifying th
    **C)** Core domain Chart. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/3.%20CoreDomainChart.JPG) 
    
    **D)** Bounded context to create boundary where each domain is applied. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/4.%20Context%20Mapping.JPG)
-   
+
+ ## 4. Metrics
+ I have used Sonarcloud to perform the analysis and calculate the metrics. I have measured the following metrices.
+
+   1. Vulnerabilities: 0        
+   2. Hotspots Reviewed: 100%
+   3. Code Smells: 0
+   4. Duplications: 0%
+       
+      The link is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/4.%20Metric/Metric.JPG)
+   6. Quality Gate Status(Passed):Status - [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/4.%20Metric/QualityGate.JPG)
+
+      
 
 
      
