@@ -27,7 +27,8 @@ In this project, I chose a Domain-driven design (DDD) in order to identifying th
    
    **D)** Bounded context to create boundary where each domain is applied. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/4.%20Context%20Mapping.JPG)
 
- ## 4. Metrics
+
+## 4. Metrics
  I have used Sonarcloud to perform the analysis and calculate the metrics. I have measured the following metrices.
 
    1. Vulnerabilities: 0        
@@ -37,6 +38,47 @@ In this project, I chose a Domain-driven design (DDD) in order to identifying th
        
       The link is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/4.%20Metric/Metric.JPG)
    6. Quality Gate Status(Passed):Status - [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/4.%20Metric/QualityGate.JPG)
+
+## 5. Clean Code Development:
+My project seems to satisfy as a clean code development based on the following criteria:
+
+1. Reliability : The code is easy and reliable to import and integrate. Reliability [check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/5.%20CleanCodeDevelopment/1.%20Reliability%20Rating.JPG)
+   
+2. Comments: Use clear and concise comments that explain the  the code. Comments [check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py)
+  
+3. Naming conventions: Use of descriptive names for functions. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py)
+
+4. Duplication: As one can see by the sonar cloud metrics duplication is 0. [Duplications check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/5.%20CleanCodeDevelopment/2.Duplication.JPG)
+
+5. Modularity: The codes are written Using indentation, spacing, and line breaks to improve the code quality. [Check_here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py)
+
+
+## 6. Build and 7. Continuous Delivery
+
+Since my project is on python that is why I used Github Action for continuous analysis and deployment.
+
+- Build: The project pipeline starts with building the project, compiling source code, bundling assets, and generating artifacts for deployment. 
+Link is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/6.%20Build/build.JPG).
+
+- Test: Unit tests and integration tests are executed to ensure the task execution, quality measure and reliability of the codebase.
+Link is provided [here](https://github.com/Sheuly/Personal_Task_Manager/actions/runs/9140769393/job/25134469737).
+
+- GitHub Actions: Github Actions let us to collaborate between Continuous Integration (CI) and Continuous Deployment (CD) pipelines directly within your GitHub repository. I used a YAML-based file to define my CI/CD pipeline.
+Link is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/.github/workflows/build.yml).
+
+## 8. UnitTest
+
+I have used pytest to perform unittest. There I have checked several measures to check my task execution and bug free. The following functions seemed to behave exactly when the were passed through Github Action. 
+
+The test file is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/test_PersonalTaskManager.py)
+
+Three of them is listed below:
+
+- test_add_task: This function checks by adding some random text. It's then passed through the listbox to get inserted.
+- test_delete_task: This function checks the functionality after selecting a data from listbox. MagicMock invoked to access the deletion.
+- test_mark_complete: this function selects the value retrurned by listbox thorugh MagicMoick. It then update the task as completed and removes the previous input.
+
+  The functions were performed as expected and the tese parformance got passed. The test result is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/8.%20Unittest/unitTest.JPG)
 
       
 
