@@ -1,46 +1,32 @@
-name: Python application test and SonarCloud analysis
+name: Build
 
 on:
   workflow_dispatch:
   pull_request:
-    branches: [ main ]
-
+    types: [opened, synchronize, reopened]
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
+    - uses: actions/checkout@v2
       with:
-        python-version: '3.10.8'
-
+        fetch-depth: 100
+    - name: Set up Python 3.10.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.10.8
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install tkinter
-        pip install pytest
-
-    - name: Run tests
-      run: pytest
-
-    - name: Install SonarScanner
-      run: |
-        curl -sSLo sonar-scanner.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
-        unzip sonar-scanner.zip
-        export PATH=$PATH:$(pwd)/sonar-scanner-4.6.2.2472-linux/bin
-
-    - name: Run SonarCloud Scan
+    - name: Install tox and any other packages
+      run: pip install tox
+    - name: Run tox
+      run: tox -e py
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
+    
       env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: |
-        sonar-scanner \
-          -Dsonar.projectKey=Personal_Task_Manager \
-          -Dsonar.organization=sheuly \
-          -Dsonar.sources=. \
-          -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
