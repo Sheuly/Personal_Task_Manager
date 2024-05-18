@@ -1,19 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[7]:
-
-
-#import
 import tkinter as tk
 from tkinter import messagebox
 
 
-# In[8]:
-
-
-#Interface making
-class MyGui:
+class TaskManager:
     def __init__(self, root):
         self.root = root
         self.root.title("Personal Task Manager")
@@ -36,78 +25,47 @@ class MyGui:
         self.task_listbox = tk.Listbox(root, width=30, height=10, font=('Arial', 11)) 
         self.task_listbox.place(x = 30, y = 100)
 
-        self.remove_button = tk.Button(root, text="Remove Task", command=self.remove_task, font=('Arial', 10)) 
+        self.remove_button = tk.Button(root, text="Remove Task", command=self.delete_task, font=('Arial', 10)) 
         self.remove_button.place(x = 30, y = 300)
 
-        self.complete_button = tk.Button(root, text="Complete Task", command=self.complete_task, font=('Arial', 10)) 
+        self.complete_button = tk.Button(root, text="Complete Task", command=self.mark_complete, font=('Arial', 10)) 
         self.complete_button.place(x = 150, y = 300)
 
-        self.task_listbox.bind('<Double-Button-1>', lambda event: self.complete_task())
+        self.task_listbox.bind('<Double-Button-1>', lambda event: self.mark_complete())
         
     def add_task(self):
         task = self.task_entry.get()
         if task:
-            self.tasks.append(task)
-            self.update_task_list()
+            self.task_listbox.insert(tk.END, task)
             self.task_entry.delete(0, tk.END)
         else:
-            messagebox.showwarning("Warning", "Please enter a task.")
-                
+            messagebox.showwarning("Warning", "You must enter a task.")
 
-    def remove_task(self):  
-        the_value = self.task_listbox.curselection() 
-        if the_value:  
-            self.tasks.pop(the_value[0])
-            self.update_task_list()
-        else:
-            messagebox.showinfo('Error', 'No Task Selected. Cannot Delete.')
-            
-        
-    def complete_task(self):
-        selected_task_index = self.task_listbox.curselection()
-        if selected_task_index:
-            completed_task = self.tasks.pop(selected_task_index[0])
-            completed_task = f"[Done] {completed_task}"
-            self.tasks.append(completed_task)
-            self.update_task_list()
-        else:
-            messagebox.showwarning("Warning", "No task selected.")
-                
-    def update_task_list(self):
-        self.task_listbox.delete(0, tk.END)
-        for task in self.tasks:
-            self.task_listbox.insert(tk.END, task)
+    def delete_task(self):
+        try:
+            selected_task_index = self.task_listbox.curselection()[0]
+            self.task_listbox.delete(selected_task_index)
+        except IndexError:
+            messagebox.showwarning("Warning", "You must select a task to delete.")
 
-    def close(self):  
-        print(self.tasks)  
-        app.destroy()
-    
-    def clear_list(self):  
-        self.task_listbox.delete(0, 'end')  
+    def mark_complete(self):
+        try:
+            selected_task_index = self.task_listbox.curselection()[0]
+            task = self.task_listbox.get(selected_task_index)
+            self.task_listbox.delete(selected_task_index)
+            self.task_listbox.insert(tk.END, f"{task} - Completed")
+        except IndexError:
+            messagebox.showwarning("Warning", "You must select a task to mark as complete.")
 
     
-            
-
-        
-
-
-# In[9]:
 
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = MyGui(root) 
+    app = TaskManager(root) 
     root.mainloop()
     
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
