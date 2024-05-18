@@ -50,7 +50,8 @@ My project seems to satisfy as a clean code development based on the following c
 5. Modularity: The codes are written Using indentation, spacing, and line breaks to improve the code quality. [Check_here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py)
 
 
-## 6. Build and 7. Continuous Delivery
+## 6. Build and 
+## 7. Continuous Delivery
 
 Since my project is on python that is why I used Github Action for continuous analysis and deployment.
 
