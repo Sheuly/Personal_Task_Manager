@@ -7,13 +7,14 @@ GitHub is used as a web-based platform that uses Git for version control and pro
 - The whole project can be found [Here](https://github.com/Sheuly/Personal_Task_Manager)
 
 ## 2. UML
-UML diagrams are used to visualize, document, and design the architecture and behavior of software systems.  I used two different softwares StarUml and draw.io to build those. Here I have used three uml diagrams.
+UML diagrams are used to visualize, document, and design the architecture and behavior of software systems.  I used two different softwares StarUml and draw.io to build those. Here I have used three uml diagrams.  
+
   **1. Use Case diagram:** Use case diagrams show the interactions between users and a system's functionalities.
-     - [Use Case Diagram link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/2.%20UML/1.%20UseCaseDiagram.JPG)
+     - [Use Case Diagram link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/2.%20UML/1.%20UseCaseDiagram.JPG)  
   **2. Activity diagram:** Activity diagram illustrates the flow of control or activities within a system.
-     - [Activity Diagram Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/2.%20UML/2.%20ActivityDiagram.JPG)
+     - [Activity Diagram Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/2.%20UML/2.%20ActivityDiagram.JPG)  
   **3. Class diagram:** Class diagram represents the static structure of a system by showing its classes, attributes, methods, and relationships.
-     - [Class Diagram Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/2.%20UML/3.%20ClassDiagram.JPG)
+     - [Class Diagram Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/2.%20UML/3.%20ClassDiagram.JPG)  
 ## 3. DDD
 In this project, I chose a Domain-driven design (DDD) in order to identifying the problem domains to create a software solution according to the domain inputs. It provides a structured approach to prioritize the domains and build software that closely reflects that understanding. 
 
@@ -39,15 +40,11 @@ The overall metrics measurement overview is provided [here](https://github.com/S
 ## 5. Clean Code Development:
 My project seems to satisfy as a clean code development based on the following criteria:
 
-1. Reliability : The code is easy and reliable to import and integrate. Reliability [check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/5.%20CleanCodeDevelopment/1.%20Reliability%20Rating.JPG)
-   
-2. Comments: Use clear and concise comments that explain the  the code. Comments [check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py)
-  
+1. Reliability : Easy and reliable to import and integrate. Reliability [check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/5.%20CleanCodeDevelopment/1.%20Reliability%20Rating.JPG)   
+2. Comments: Use clear and concise comments that explain the  the code. Comments [check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py) 
 3. Naming conventions: Use of descriptive names for functions. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py)
-
-4. Duplication: As one can see by the sonar cloud metrics duplication is 0. [Duplications check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/5.%20CleanCodeDevelopment/2.Duplication.JPG)
-
-5. Modularity: The codes are written Using indentation, spacing, and line breaks to improve the code quality. [Check_here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py)
+4. Duplication: Sonarcloud metrics duplication is 0. [Duplications check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/5.%20CleanCodeDevelopment/2.Duplication.JPG)
+5. Modularity: Codes are written Using indentation, spacing, and line breaks to improve the code quality. [Check_here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py)
 
 
 ## 6. Build and 7. Continuous Delivery
@@ -91,12 +88,17 @@ My favourite shortcuts are provided.
 - Shift + F5: Stop Debugging
 
 ## 10. DSL
-DSL stands for Domain Specific Language. It's a programming language dedicated to a particular problem domain, a particular problem representation technique, and a particular solution technique. DSLs provide a concise and expressive way to solve problems within a specific domain, making it easier for domain understand, communicate ideas and solutions effectively.
+Below is a sample DSL code for my project application. Although it does not contribute to my project still I decided to learn and implement it in my problem context so that I can observe the change and benefits it can provide with. I understood that it can provide provide a concise and expressive way to solve problems within a specific domain, making it easier for domain understand, communicate ideas and solutions effectively. This can be very helpful while working with large problems.
 
-Below is a sample DSL code for my project application. Although it does not contribute my project still I decided to learn and implement it in my problem so that I can observe the change and benefits it can provide with.
 My sample DSL is provided with [this](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/DSL_sample.py) link.
 
-## 11. 
+## 11. Functional Programming
+My project is covered with all the functional aspects mentioned.  
+- Side effect free functions: All of my codes are well side effect free and can be implimented and also extended. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/11.%20FunctionalProgramming/SideEffectFree.JPG) is provided
+- Use of Higher oder function: The project uses significant but not that of higher ordered. This project designed in [proposal](https://github.com/Sheuly/Personal_Task_Manager/blob/main/Project_Proposal.pdf) is big and yet to impliment some significant functions.
+- functions as parameters and return values: My functiones are used for passing as parameters. The tasks are invoked functions and passed to the listbox. The corresponding [link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/11.%20FunctionalProgramming/SideEffectFree.JPG) is provided.
+
+
 
 
 
