@@ -38,13 +38,17 @@ In this project, I chose a Domain-driven design (DDD) in order to identifying th
 The overall metrics measurement overview is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/4.%20Metric/Metric.JPG)
 
 ## 5. Clean Code Development:
-My project seems to satisfy as a clean code development based on the following criteria:
+My project seems to satisfy as a clean code development based on the following criteria:  
 
+**(A)**  
 1. Reliability : Easy and reliable to import and integrate. Reliability [check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/5.%20CleanCodeDevelopment/1.%20Reliability%20Rating.JPG)   
 2. Comments: Use clear and concise comments that explain the  the code. Comments [check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py) 
 3. Naming conventions: Use of descriptive names for functions. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py)
 4. Duplication: Sonarcloud metrics duplication is 0. [Duplications check](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/5.%20CleanCodeDevelopment/2.Duplication.JPG)
 5. Modularity: Codes are written Using indentation, spacing, and line breaks to improve the code quality. [Check_here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/PersonalTaskManager.py)
+
+**(B)**
+Clean code development [Cheatsheet](https://github.com/Sheuly/Personal_Task_Manager/blob/main/Clean%20Code%20Development%20cheat%20sheet%20for.pdf)
 
 
 ## 6. Build and 7. Continuous Delivery
