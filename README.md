@@ -5,6 +5,7 @@ This repository conatains an application which is done as a requirement for the 
 ## 1. Git
 GitHub is used as a web-based platform that uses Git for version control and provides a collaborative environment. It hosts Git repositories and offers additional features like issue tracking, pull requests, code review, and continuous integration/continuous deployment (CI/CD) pipelines, enhancing the workflow and collaboration with Sonarcloud. 
 - The whole project can be found [Here](https://github.com/Sheuly/Personal_Task_Manager)
+- Sonarcloud analysis is [here](https://sonarcloud.io/project/overview?id=Personal_Task_Manager)
 
 ## 2. UML
 UML diagrams are used to visualize, document, and design the architecture and behavior of software systems.  I used two different softwares StarUml and draw.io to build those. Here I have used three uml diagrams.  
