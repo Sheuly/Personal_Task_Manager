@@ -20,21 +20,21 @@ In this project, I chose a Domain-driven design (DDD) in order to identifying th
  The following steps are listed below: 
  
    **A)** Various possible fields and events are gathered through brain storming and significant domains are listed. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/1.%20EventStorming.JPG)    
-   **B)** A clear strategic design of the domains is provided coming from event storming. [Link 1](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/2.%20StrategicDesign.JPG) and [Link 2](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/2.%20StrategicDesign-2.JPG)
-   **C)** Core domain Chart. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/3.%20CoreDomainChart.JPG) 
+   **B)** A clear strategic design of the domains is provided coming from event storming. [Link 1](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/2.%20StrategicDesign.JPG) and [Link 2](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/2.%20StrategicDesign-2.JPG)  
+   **C)** Core domain Chart. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/3.%20CoreDomainChart.JPG)    
    **D)** Bounded context to create boundary where each domain is applied. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/4.%20Context%20Mapping.JPG)
 
 
 ## 4. Metrics
  I have used Sonarcloud to perform the analysis and calculate the metrics. I have measured the following metrices.
 
-   1. Vulnerabilities: 0        
+   1. Vulnerabilities: 0
    2. Hotspots Reviewed: 100%
    3. Code Smells: 0
    4. Duplications: 0%
-       
-      The link is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/4.%20Metric/Metric.JPG)
-   6. Quality Gate Status(Passed):Status - [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/4.%20Metric/QualityGate.JPG)
+   5. Quality Gate Status(Passed):Status - [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/4.%20Metric/QualityGate.JPG)
+
+The overall metrics measurement overview is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/4.%20Metric/Metric.JPG)
 
 ## 5. Clean Code Development:
 My project seems to satisfy as a clean code development based on the following criteria:
@@ -76,6 +76,31 @@ Three of them is listed below:
 - test_mark_complete: this function selects the value retrurned by listbox thorugh MagicMoick. It then update the task as completed and removes the previous input.
 
 The functions were performed as expected and the tese parformance got passed. The test result is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/8.%20Unittest/unitTest.JPG)
+
+## 9. IDE
+I used visual studio code as an IDE to run my python project and test the work. I also prefer to implement on jupyter notebook but I found it hard to apply the untitesting.
+My favourite shortcuts are provided.
+
+- Alt+Click : It Inserts a cursor
+- Ctrl+Shift+N: It allows navigate to a file
+- ctrl + L: Clear Console
+- Ctrl+Shift+W : Close window/instance
+- Ctrl + Shift + K: delete the selected line.
+- Ctrl + Shift + T: for navigating to a test.
+- F5: Start Debugging
+- Shift + F5: Stop Debugging
+
+## 10. DSL
+DSL stands for Domain Specific Language. It's a programming language dedicated to a particular problem domain, a particular problem representation technique, and a particular solution technique. DSLs provide a concise and expressive way to solve problems within a specific domain, making it easier for domain understand, communicate ideas and solutions effectively.
+
+Below is a sample DSL code for my project application. Although it does not contribute my project still I decided to learn and implement it in my problem so that I can observe the change and benefits it can provide with.
+My sample DSL is provided with [this](https://github.com/Sheuly/Personal_Task_Manager/blob/main/src/DSL_sample.py) link.
+
+## 11. 
+
+
+
+
 
       
 
