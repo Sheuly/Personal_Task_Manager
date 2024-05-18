@@ -19,12 +19,9 @@ In this project, I chose a Domain-driven design (DDD) in order to identifying th
 
  The following steps are listed below: 
  
-   **A)** Various possible fields and events are gathered through brain storming and significant domains are listed. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/1.%20EventStorming.JPG) 
-   
+   **A)** Various possible fields and events are gathered through brain storming and significant domains are listed. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/1.%20EventStorming.JPG)    
    **B)** A clear strategic design of the domains is provided coming from event storming. [Link 1](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/2.%20StrategicDesign.JPG) and [Link 2](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/2.%20StrategicDesign-2.JPG)
-   
    **C)** Core domain Chart. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/3.%20CoreDomainChart.JPG) 
-   
    **D)** Bounded context to create boundary where each domain is applied. [Link](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/3.%20DDD/4.%20Context%20Mapping.JPG)
 
 
@@ -78,7 +75,7 @@ Three of them is listed below:
 - test_delete_task: This function checks the functionality after selecting a data from listbox. MagicMock invoked to access the deletion.
 - test_mark_complete: this function selects the value retrurned by listbox thorugh MagicMoick. It then update the task as completed and removes the previous input.
 
-  The functions were performed as expected and the tese parformance got passed. The test result is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/8.%20Unittest/unitTest.JPG)
+The functions were performed as expected and the tese parformance got passed. The test result is provided [here](https://github.com/Sheuly/Personal_Task_Manager/blob/main/TASK_Folder/8.%20Unittest/unitTest.JPG)
 
       
 
